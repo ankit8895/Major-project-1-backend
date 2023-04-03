@@ -1,0 +1,1 @@
+function toggleFriend(e){$(e).click((function(n){n.preventDefault(),$.ajax({type:"GET",url:$(e).attr("href"),success:function(n){n.deleted?$(e).html("Add Friend"):$(e).html("Remove Friend")},error:function(e){console.log(e.responseText)}})}))}toggleFriend($(".toggle-friend-btn"));
